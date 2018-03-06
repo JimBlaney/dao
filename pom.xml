@@ -10,6 +10,26 @@
 	<name>dao</name>
 	<url>https://github.com/JimBlaney/dao</url>
 
+	<issueManagement>
+		<url>https://github.com/JimBlaney/dao/issues</url>
+		<system>GitHub Issues</system>
+	</issueManagement>
+
+	<scm>
+		<url>https://github.com/JimBlaney/dao</url>
+		<connection>scm:git:git://github.com/JimBlaney/dao.git</connection>
+		<developerConnection>scm:git:git@github.com:JimBlaney/dao.git</developerConnection>
+	</scm>
+
+	<developers>
+		<developer>
+			<email>james.m.blaney.jr@gmail.com</email>
+			<name>Jim Blaney</name>
+			<url>https://github.com/JimBlaney</url>
+			<id>JimBlaney</id>
+		</developer>
+	</developers>
+
 	<properties>
 		<hibernate.version>5.2.14.Final</hibernate.version>
 
@@ -40,4 +60,14 @@
 		</dependency>
 
 	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.5.3</version>
+			</plugin>
+		</plugins>
+	</build>
 </project>
